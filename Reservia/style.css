@@ -1,13 +1,67 @@
-.logo{
-    width: 100px;
-    height: 25%;
+body{
+    font-family: 'Raleway', sans-serif;
 }
 .hebergementmd{
-width: 20%;
+width: 250px;
+height: 150px;
+border-radius: 25px 25px 0px 0px;
 }
 .etoilebleu{
 color: #0065FC;
 }
-#etoilegrise{
+.etoilegrise{
     color:#F2F2F2 !important;
+}
+.ligne{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.boite{
+    padding: 5px;
+    background-color: white;
+    border-radius:25px;
+}
+.txtboite{
+    margin: 3%;
+}
+.bgboite{
+    background-color: #F2F2F2;
+    border-radius:25px;
+}
+.filtre{
+    display: flex;
+    align-items: center;
+    border: solid #F2F2F2 1px;
+    border-radius: 50px;
+    width:fit-content;
+    margin: 12px;
+}
+.icone{
+    display: flex;
+    align-items: center;
+    background-color: #DEEBFF;
+    padding: 12px;
+    border-radius: 50px ;
+    width: 15px;
+    height: 15px;
+    font-size: small;
+    color: #0065FC;
+}
+
+.txtfiltre{
+    margin: 0px 20px ;
+}
+.filtreligne{
+    display: flex;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+}
+h1{
+    font-weight: bolder;
 }
