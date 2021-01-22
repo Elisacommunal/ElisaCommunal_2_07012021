@@ -1,0 +1,54 @@
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#inscription{
+    color: #0065FC;
+    font-weight: bolder;
+    padding: 1em;
+    margin: 0%;
+}
+.alignement{
+    display: flex;
+}
+/* navigation */
+nav{
+    display: flex;
+}
+.navig{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+.navig:hover{
+    border-top: solid #0065FC 3px;
+    color: #0065FC;
+    padding: 1em;
+}
+/* Formulaire de recherche */
+.form{
+    display: flex;
+    align-items: center;
+    border: #F2F2F2 solid 1px;
+    width: fit-content;
+    border-radius: 10px  10px;
+}
+input{
+    border: hidden;
+    padding-left: 1em;
+    font-weight: bold;
+}
+button{
+    background-color: #0065FC;
+    color: white;
+    border: hidden;
+    padding: 1.1em;
+    border-radius:  0px 10px 10px 0px;
+}
+.map-marker{
+    background-color: #F2F2F2;
+    padding: auto;
+    padding: 1em ;
+    border-radius:  10px 0px 0px 10px;
+}

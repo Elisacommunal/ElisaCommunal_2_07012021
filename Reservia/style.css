@@ -1,15 +1,16 @@
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 2%;
 }
 .hebergementmd{
 width: 250px;
 height: 150px;
 border-radius: 25px 25px 0px 0px;
 }
-.etoilebleu{
+.etoile-bleu{
 color: #0065FC;
 }
-.etoilegrise{
+.etoile-grise{
     color:#F2F2F2 !important;
 }
 .ligne{
@@ -29,10 +30,14 @@ color: #0065FC;
     background-color: #F2F2F2;
     border-radius:25px;
 }
+.bgboite:nth-child(2){
+    background-color: purple;
+    flex: 3;
+}
 .filtre{
     display: flex;
     align-items: center;
-    border: solid #F2F2F2 1px;
+    border: solid #F2F2F2 3px;
     border-radius: 50px;
     width:fit-content;
     margin: 12px;
@@ -48,20 +53,36 @@ color: #0065FC;
     font-size: small;
     color: #0065FC;
 }
-
 .txtfiltre{
     margin: 0px 20px ;
+    font-weight: bold;
 }
 .filtreligne{
     display: flex;
-}
-.head{
-    display: flex;
-    justify-content: space-between;
-}
-nav{
-    display: flex;
+    align-items: center;
 }
 h1{
     font-weight: bolder;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.icone-info{
+    text-align: center;
+    color: #0065FC;
+    font-size: small;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: solid #F2F2F2 2px;
+    border-radius: 20px;
+}
+.txt-info{
+    padding: 5px;
+}
+h2{
+    font-size: 20px;
 }
