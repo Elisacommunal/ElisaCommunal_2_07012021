@@ -1,14 +1,17 @@
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 2%;
+}
+header, .ensemble, section{
+    margin: 1em;
 }
 .hebergementmd{
-width: 250px;
-height: 150px;
-border-radius: 25px 25px 0px 0px;
+    width: 300px;
+    height: 150px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
 }
 .etoile-bleu{
-color: #0065FC;
+    color: #0065FC;
 }
 .etoile-grise{
     color:#F2F2F2 !important;
@@ -19,9 +22,11 @@ color: #0065FC;
     padding: 10px;
 }
 .boite{
-    padding: 5px;
+    padding: 2px;
     background-color: white;
     border-radius:25px;
+    box-shadow: 2px 3px 15px #92929269;
+    margin: 20px 0px;
 }
 .txtboite{
     margin: 3%;
@@ -29,9 +34,10 @@ color: #0065FC;
 .bgboite{
     background-color: #F2F2F2;
     border-radius:25px;
+    padding: 1em;
+    margin: 0.5em;
 }
 .bgboite:nth-child(2){
-    background-color: purple;
     flex: 3;
 }
 .filtre{
@@ -84,5 +90,10 @@ h1{
     padding: 5px;
 }
 h2{
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.H2-hebergement{
+    padding-left: 1.5em;
+    
 }

@@ -1,17 +1,20 @@
 .aside{
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     background-color: #F2F2F2;
     border-radius:25px;
-    padding: 3%;
+    padding: 1em;
+    margin: 0.5em;
     width: fit-content;
 }
 .aside:nth-child(1){
-    background-color: pink;
     flex: 1;
 }
 .img-pop{
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    border-radius: 25px 0px 0px 25px;
+    object-fit: cover;
 }
 .txticone{
     display: flex;
@@ -22,4 +25,20 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+}
+.boite-pop{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius:25px;
+    box-shadow: 2px 3px 15px #92929269;
+    margin: 2em 0.5em;
+}
+h3{
+    font-size: 18px;
+    margin: 0;
+}
+.lf{
+    display: flex;
+    flex-direction: column;
 }
