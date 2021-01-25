@@ -7,7 +7,7 @@
     width: fit-content;
 }
 .aside:nth-child(1){
-    flex: 1;
+    flex: 2;
 }
 .img-pop{
     width: 150px;
@@ -37,7 +37,9 @@
 h3{
     font-size: 18px;
     margin: 0;
+    padding: 0;
 }
+
 .lf{
     display: flex;
     flex-direction: column;

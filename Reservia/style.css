@@ -1,12 +1,13 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
+
 header, .ensemble, section{
     margin: 1em;
 }
 .hebergementmd{
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: 8em;
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;
 }
@@ -19,26 +20,30 @@ header, .ensemble, section{
 .ligne{
     display: flex;
     justify-content: space-around;
-    padding: 10px;
 }
 .boite{
-    padding: 2px;
+    padding: 4px;
     background-color: white;
     border-radius:25px;
     box-shadow: 2px 3px 15px #92929269;
     margin: 20px 0px;
+    width: 30%;
 }
 .txtboite{
     margin: 3%;
 }
+.txtboite p{
+    margin: 0;
+    padding: 0.5em 0;
+}
 .bgboite{
     background-color: #F2F2F2;
     border-radius:25px;
-    padding: 1em;
+    padding: 0.5em;
     margin: 0.5em;
 }
 .bgboite:nth-child(2){
-    flex: 3;
+    flex: 4;
 }
 .filtre{
     display: flex;
@@ -47,6 +52,9 @@ header, .ensemble, section{
     border-radius: 50px;
     width:fit-content;
     margin: 12px;
+}
+#titre-filtre{
+    margin-right: 1em;
 }
 .icone{
     display: flex;
@@ -82,9 +90,10 @@ h1{
     font-size: small;
     width: 10px;
     height: 10px;
-    padding: 10px;
+    padding: 6px;
     border: solid #F2F2F2 2px;
     border-radius: 20px;
+    margin-right: 1%;
 }
 .txt-info{
     padding: 5px;
@@ -96,4 +105,7 @@ h2{
 .H2-hebergement{
     padding-left: 1.5em;
     
+}
+.strong{
+    font-weight: bold;
 }

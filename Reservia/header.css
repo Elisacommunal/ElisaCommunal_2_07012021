@@ -13,8 +13,9 @@
     display: flex;
 }
 /* navigation */
-nav{
+ul{
     display: flex;
+    list-style-type: none;
 }
 .navig{
     text-decoration: none;
