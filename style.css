@@ -1,15 +1,28 @@
 body{
     font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin: 0%;
 }
-
 header, .ensemble, section{
     margin: 1em;
 }
-.hebergementmd{
-    width: 100%;
-    height: 8em;
-    border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
+.ensemble{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.img-reservia{
+    position: absolute;
+    top: 15px;
+    left: 3%;
+}
+.liens{
+    text-decoration: none;
+    color: black;
+}
+.filtre:hover {
+    color: #0065FC;
+    background-color:#DEEBFF;
 }
 .etoile-bleu{
     color: #0065FC;
@@ -17,95 +30,25 @@ header, .ensemble, section{
 .etoile-grise{
     color:#F2F2F2 !important;
 }
-.ligne{
-    display: flex;
-    justify-content: space-around;
-}
-.boite{
-    padding: 4px;
-    background-color: white;
-    border-radius:25px;
-    box-shadow: 2px 3px 15px #92929269;
-    margin: 20px 0px;
-    width: 30%;
-}
-.txtboite{
-    margin: 3%;
-}
-.txtboite p{
-    margin: 0;
-    padding: 0.5em 0;
-}
-.bgboite{
-    background-color: #F2F2F2;
-    border-radius:25px;
-    padding: 0.5em;
-    margin: 0.5em;
-}
-.bgboite:nth-child(2){
-    flex: 4;
-}
-.filtre{
-    display: flex;
-    align-items: center;
-    border: solid #F2F2F2 3px;
-    border-radius: 50px;
-    width:fit-content;
-    margin: 12px;
-}
-#titre-filtre{
-    margin-right: 1em;
-}
-.icone{
-    display: flex;
-    align-items: center;
-    background-color: #DEEBFF;
-    padding: 12px;
-    border-radius: 50px ;
-    width: 15px;
-    height: 15px;
-    font-size: small;
-    color: #0065FC;
-}
-.txtfiltre{
-    margin: 0px 20px ;
-    font-weight: bold;
-}
-.filtreligne{
-    display: flex;
-    align-items: center;
-}
 h1{
     font-weight: bolder;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
-.info{
-    display: flex;
-    align-items: center;
-}
-.icone-info{
-    text-align: center;
-    color: #0065FC;
-    font-size: small;
-    width: 10px;
-    height: 10px;
-    padding: 6px;
-    border: solid #F2F2F2 2px;
-    border-radius: 20px;
-    margin-right: 1%;
-}
-.txt-info{
-    padding: 5px;
-}
 h2{
     font-size: 25px;
     font-weight: bolder;
 }
-.H2-hebergement{
-    padding-left: 1.5em;
-    
+h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
-.strong{
-    font-weight: bold;
+@media only screen and (max-width: 480px){
+    .ensemble{
+        display: block;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 991px){
+    
 }

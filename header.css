@@ -1,55 +1,157 @@
-.head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    .entete{
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
+    #inscription{
+        color: #0065FC;
+        font-weight: bolder;
+        padding: 1em;
+        margin: 0%;
+    }
+    .alignement{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /* navigation */
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+    .navig{
+        text-decoration: none;
+        color: black;
+        padding: 1em;
+    }
+    .navig:hover{
+        border-top: solid #0065FC 3px;
+        color: #0065FC;
+        padding: 1em;
+    }
+    /* Formulaire de recherche */
+    .form{
+        display: flex;
+        align-items: center;
+        border: #F2F2F2 solid 1px;
+        width: 35%;
+        border-radius: 10px  10px;
+    }
+    .form i{
+        font-size: 20px;
+    }
+    input{
+        border: hidden;
+        padding-left: 1em;
+        font-weight: bold;
+        width: 80%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    button{
+        background-color: #0065FC;
+        color: white;
+        border: hidden;
+        padding: 1.2em;
+        border-radius:  0px 10px 10px 0px;
+        font-size: 15px;
+    }
+    .rechercheM{
+        display: none;
+    }
+    .map-marker{
+        background-color: #F2F2F2;
+        padding: auto;
+        padding: 1em ;
+        border-radius:  10px 0px 0px 10px;
+    }
+    /*info*/
+    .info{
+        display: flex;
+        align-items: center;
+    }
+    .icone-info{
+        text-align: center;
+        color: #0065FC;
+        font-size: small;
+        width: 10px;
+        height: 10px;
+        padding: 6px;
+        border: solid #F2F2F2 2px;
+        border-radius: 20px;
+        margin-right: 1%;
+    }
+    .txt-info{
+        padding: 5px;
+    }
+    /*Filtre*/
+    .filtre{
+        display: flex;
+        align-items: center;
+        border: solid #F2F2F2 3px;
+        border-radius: 50px;
+        width:fit-content;
+        margin: 12px;
+    }
+    #titre-filtre{
+        margin-right: 1em;
+    }
+    .icone{
+        display: flex;
+        align-items: center;
+        background-color: #DEEBFF;
+        padding: 12px;
+        border-radius: 50px ;
+        width: 15px;
+        height: 15px;
+        font-size: small;
+        color: #0065FC;
+    }
+    .txtfiltre{
+        margin: 0px 25px ;
+        font-weight: bold;
+    }
+    .filtreligne{
+        display: flex;
+        align-items: center;
+    }
+    
+
+@media only screen and (max-width: 480px) {
+    .alignement{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-right: 2%;
+    }
+    nav{
+        justify-content: space-between;
+
+    }
+    .filtreligne{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form{
+        width: 100%;
+    }
+    .rechercheM{
+        display: block;
+        color: white;
+    }
+    .rechercheL{
+        display: none;
+    }
+    
 }
-#inscription{
-    color: #0065FC;
-    font-weight: bolder;
-    padding: 1em;
-    margin: 0%;
-}
-.alignement{
-    display: flex;
-}
-/* navigation */
-ul{
-    display: flex;
-    list-style-type: none;
-}
-.navig{
-    text-decoration: none;
-    color: black;
-    padding: 1em;
-}
-.navig:hover{
-    border-top: solid #0065FC 3px;
-    color: #0065FC;
-    padding: 1em;
-}
-/* Formulaire de recherche */
-.form{
-    display: flex;
-    align-items: center;
-    border: #F2F2F2 solid 1px;
-    width: fit-content;
-    border-radius: 10px  10px;
-}
-input{
-    border: hidden;
-    padding-left: 1em;
-    font-weight: bold;
-}
-button{
-    background-color: #0065FC;
-    color: white;
-    border: hidden;
-    padding: 1.1em;
-    border-radius:  0px 10px 10px 0px;
-}
-.map-marker{
-    background-color: #F2F2F2;
-    padding: auto;
-    padding: 1em ;
-    border-radius:  10px 0px 0px 10px;
+
+@media screen and (min-width: 481px) and (max-width: 991px){
+    .filtreligne{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form{
+        min-width: 500px;
+        width: 50%;
+    }
 }
