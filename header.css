@@ -38,7 +38,7 @@
         border: #F2F2F2 solid 1px;
         width: 35%;
         border-radius: 10px  10px;
-        min-width: 320px;
+        min-width: 260px;
         width: 50%;
         max-width: 500px;
     }
@@ -119,12 +119,16 @@
     .filtreligne{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     
 
 @media screen and (max-width: 480px) {
-    .alignement{
-        flex-direction: column;
+    .entete{
+        position: relative;
+        display: block;
+    
+        margin: 0 -2em;
     }
     .rechercheM{
         display: block;
@@ -133,7 +137,34 @@
     .rechercheL{
         display: none;
     }
-    
+    #inscription{
+        position: absolute;
+        right: 5px;
+        top: 0.5em;
+    }
+    ul{
+        padding: 0.7em;
+        font-size: 20px;
+        margin: 3em -1em 1em 0em;
+    }
+    nav{
+        justify-content: center;
+        padding: 0em;
+        
+    }
+    .navig{
+        border-bottom: solid #DEEBFF 3px;
+        border-top: none;
+        padding: 1em;
+        padding-top: 1.8em;
+    }
+    .navig:hover{
+        border-bottom: solid #0065FC 3px;
+        border-top: none;
+        color: #0065FC;
+        padding: 1em;
+        padding-top: 1.8em;
+    }
 }
 
 @media screen and (max-width: 768px){

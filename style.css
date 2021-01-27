@@ -13,9 +13,8 @@ header, .ensemble, section{
 }
 .img-reservia{
     position: absolute;
-    top: 15px;
-    left: 2%;
-    z-index: -1;
+    top: 10px;
+    left: 30px;
 }
 .liens{
     text-decoration: none;

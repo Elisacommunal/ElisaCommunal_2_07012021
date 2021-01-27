@@ -4,6 +4,9 @@
     width: fit-content;
     height: fit-content;
 }
+.blublu{
+    display: flex;
+}
 #activité{
     margin-left: 1em;
 }
@@ -45,7 +48,6 @@
 .dispo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .footer{
     display: flex;
@@ -54,7 +56,7 @@
     padding: 3em 4em;
 }
 .colonne{
-    margin-right: 15%;
+    margin-right: 5%;
 }
 .colonne p {
     width: 15em;
@@ -83,6 +85,11 @@
         margin: 0%;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px){
-
+@media screen and (max-width: 1024px){
+    .blublu{
+        display: block;
+    }
+    .act img{
+        height: 180px;
+    }
 }
