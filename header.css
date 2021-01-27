@@ -13,6 +13,7 @@
     .alignement{
         display: flex;
         flex-direction: row-reverse;
+        padding: 1%;
     }
     /* navigation */
     ul{
@@ -28,6 +29,7 @@
         border-top: solid #0065FC 3px;
         color: #0065FC;
         padding: 1em;
+        padding-top: 1.8em;
     }
     /* Formulaire de recherche */
     .form{
@@ -36,6 +38,9 @@
         border: #F2F2F2 solid 1px;
         width: 35%;
         border-radius: 10px  10px;
+        min-width: 320px;
+        width: 50%;
+        max-width: 500px;
     }
     .form i{
         font-size: 20px;
@@ -117,23 +122,9 @@
     }
     
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .alignement{
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        padding-right: 2%;
-    }
-    nav{
-        justify-content: space-between;
-
-    }
-    .filtreligne{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .form{
-        width: 100%;
+        flex-direction: column;
     }
     .rechercheM{
         display: block;
@@ -145,13 +136,12 @@
     
 }
 
-@media screen and (min-width: 481px) and (max-width: 991px){
+@media screen and (max-width: 768px){
     .filtreligne{
         display: flex;
         flex-wrap: wrap;
     }
-    .form{
-        min-width: 500px;
-        width: 50%;
-    }
+    
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
 }

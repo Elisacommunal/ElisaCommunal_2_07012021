@@ -38,17 +38,39 @@
 .bgboite:nth-child(2){
     flex: 4;
 }
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     .ligne{
-        display: block;
+        display: block !important;
     }
     .boite{
-        width: 100%;
+        width: 100% !important;
+        margin: 20px 0 !important;
     }
-    .bgboite{
-        background-color: white;
+    .boite-heberg{
+        display: block !important;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 991px){
-    
+@media screen and (max-width: 768px){
+    .bgboite{
+        display: block;
+        background-color: white;
+    }
+    .boite-heberg{
+        display: flex;
+    }
+   .ligne{
+       display: flex;
+       flex-direction: column;
+       width: fit-content;
+   }
+   .boite{
+       width: 80%;
+       margin-left: 2em;
+   }
+   .H2-hebergement{
+       padding-left: 0;
+   }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
 }

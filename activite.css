@@ -60,27 +60,17 @@
     width: 15em;
 }
 @media only screen and (max-width: 480px){
-    .act{
+    
+    
+}
+@media screen and (max-width: 768px){
+    .footer{
         display: block;
+        font-size: small;
+        padding: 1.5em;
     }
     .act img{
-        height: 150px;
-    }
-    .footer{
-        display: block;
-        font-size: small;
-        padding: 1.5em;
-    }
-    .colonne{
-        padding: 2em 1em;
-        margin: 0%;
-    }
-}
-@media screen and (min-width: 481px) and (max-width: 991px){
-    .footer{
-        display: block;
-        font-size: small;
-        padding: 1.5em;
+        height: 180px;
     }
     .act{
         display: block;
@@ -88,4 +78,11 @@
     .act-tab{
         display: flex;
     }
+    .colonne{
+        padding: 2em 1em;
+        margin: 0%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
 }

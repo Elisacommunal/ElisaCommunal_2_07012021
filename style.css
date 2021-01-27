@@ -4,7 +4,7 @@ body{
     margin: 0%;
 }
 header, .ensemble, section{
-    margin: 1em;
+    margin: 0em 1em;
 }
 .ensemble{
     display: flex;
@@ -14,7 +14,8 @@ header, .ensemble, section{
 .img-reservia{
     position: absolute;
     top: 15px;
-    left: 3%;
+    left: 2%;
+    z-index: -1;
 }
 .liens{
     text-decoration: none;
@@ -32,7 +33,7 @@ header, .ensemble, section{
 }
 h1{
     font-weight: bolder;
-    font-weight: bold;
+    font-size: 30px;
     font-family: 'Raleway', sans-serif;
 }
 h2{
@@ -45,10 +46,18 @@ h3{
     padding: 0;
 }
 @media only screen and (max-width: 480px){
+    h1{
+        font-size: 22px !important;
+    }
+}
+@media screen and (max-width: 768px){
     .ensemble{
         display: block;
     }
+    h1{
+        font-size: 25px;
+    }
 }
-@media screen and (min-width: 481px) and (max-width: 991px){
-    
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
 }
