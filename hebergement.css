@@ -17,7 +17,7 @@
     object-fit: cover;
 }
 .H2-hebergement{
-    padding-left: 1.5em;
+    padding-left: 0.5em;
 }
 .strong{
     font-weight: bold;
@@ -45,21 +45,31 @@
 .bgboite:nth-child(2){
     flex: 4;
 }
+.lien-afficher{
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+}
 @media screen and (max-width: 480px){
     .ligne{
         display: block !important;
+        margin: 0px !important;
     }
     .boite{
-        width: 100% !important;
-        margin: 20px 0 !important;
+        width: 90% !important;
+        margin-left: 1em;
     }
     .boite-heberg{
         display: block !important;
+    }
+    .bgboite{
+        padding: 5%;
     }
 }
 @media screen and (max-width: 768px){
     .bgboite{
         background-color: white;
+        margin: 0;
     }
 }
 @media screen and (max-width: 1024px){
@@ -76,10 +86,8 @@
    }
    .boite{
        width: 95%;
-       margin: 2px;
-      
    }
-   .H2-hebergement{
+   .lien-afficher{
        padding-left: 0;
    }
 }

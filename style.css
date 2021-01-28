@@ -6,6 +6,9 @@ body{
 header, .ensemble, section{
     margin: 0em 1em;
 }
+.euro{
+    font-weight: bold;
+}
 .ensemble{
     display: flex;
     justify-content: space-between;
@@ -19,6 +22,8 @@ header, .ensemble, section{
 .liens{
     text-decoration: none;
     color: black;
+    margin: 0;
+    padding: 0;
 }
 .filtre:hover {
     color: #0065FC;
@@ -50,10 +55,14 @@ h3{
     h1{
         font-size: 22px !important;
     }
+    .img-reservia{
+        left: 40px;
+    }
 }
 @media screen and (max-width: 768px){
     .ensemble{
         display: block;
+        margin: 0;
     }
     h1{
         font-size: 25px;

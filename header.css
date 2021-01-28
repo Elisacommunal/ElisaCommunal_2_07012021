@@ -71,7 +71,7 @@
     /*info*/
     .info{
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
     .icone-info{
         text-align: center;
@@ -129,7 +129,7 @@
     .entete{
         position: relative;
         display: block;
-        margin: 0 -2em;
+        margin: 0 ;
     }
     .form{
         width: 100% !important;
@@ -144,7 +144,7 @@
     }
     #inscription{
         position: absolute;
-        right: 30px;
+        right: 46px;
         top: 0.5em;
         padding-right: 0px;
     }
@@ -156,7 +156,8 @@
     nav{
         justify-content: center;
         padding: 0em;
-        
+        width: 90%;
+        margin: 0;
     }
     .navig{
         border-bottom: solid #DEEBFF 3px;
@@ -171,6 +172,12 @@
         padding: 1em;
         padding-top: 1.8em;
     }
+    button{
+        border-radius: 10px ;
+    }
+    .alignement{
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -179,7 +186,7 @@
     }
     .form{
         width: 75%;
-        min-width: 460px;
+        min-width: 450px;
     }
 }
 @media screen and (max-width: 1024px){

@@ -9,7 +9,7 @@
     flex: 2;
 }
 .img-pop{
-    width: 30%;
+    width: 40%;
     height: 10em;
     padding: 0.5em;
     border-radius: 25px 0px 0px 25px;
@@ -19,6 +19,9 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+.txticone i{
+    font-size: 25px;
 }
 .boite-pop{
     display: flex;
@@ -48,6 +51,11 @@
     }
     .txt-pop p{
         font-size: 16px !important;
+    }
+    .aside{
+        border-radius: 0;
+        margin: 0;
+        padding: 1em 2em;
     }
 }
 
