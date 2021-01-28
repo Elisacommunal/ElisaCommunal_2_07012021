@@ -144,8 +144,9 @@
     }
     #inscription{
         position: absolute;
-        right: 5px;
+        right: 30px;
         top: 0.5em;
+        padding-right: 0px;
     }
     ul{
         padding: 0.7em;
