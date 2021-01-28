@@ -33,27 +33,29 @@
     font-size: 18px;
 }
 .txt-pop p{
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 .txt-pop h3{
-    padding-top: 0.5em;
     font-size: 18px;
 }
 .txt-pop i{
-    padding-bottom: 1em;
+    padding-bottom: 0.2em;
     
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
     .txt-pop h3 {
-        font-size: 17px;
+        font-size: 18px !important;
+    }
+    .txt-pop p{
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .txt-pop h3{
+        font-size: 16px;
     }
     .txt-pop p{
         font-size: 14px;
     }
-}
-@media screen and (min-width: 481px) and (max-width: 768px){
-    
-}
-@media screen and (min-width: 769px) and (max-width: 1024px){
-
 }
