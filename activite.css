@@ -4,7 +4,7 @@
     width: fit-content;
     height: fit-content;
 }
-.blublu{
+.tab-act{
     display: flex;
 }
 #activité{
@@ -34,7 +34,14 @@
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
-.boite-act{
+.boite-act1 {
+    border-radius:25px;
+    width: 45%;
+    height: fit-content;
+    box-shadow: 2px 3px 15px #92929269;
+    margin: 1em;
+}
+.boite-act2{
     border-radius:25px;
     width: fit-content;
     height: fit-content;
@@ -42,12 +49,19 @@
     margin: 1em;
 }
 .txt-act{
+    font-size: 15px;
+    padding: 0.5em 1.5em;
+    margin: 0;
+}
+.txt-act-long{
+    font-size: 15px;
     padding: 0.5em 1.5em;
     margin: 0;
 }
 .dispo{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 .footer{
     display: flex;
@@ -77,19 +91,42 @@
     .act{
         display: block;
     }
-    .act-tab{
-        display: flex;
-    }
-    .colonne{
-        padding: 2em 1em;
-        margin: 0%;
+    .tab-act{
+        width: 100% !important;
     }
 }
 @media screen and (max-width: 1024px){
-    .blublu{
+    .tab-act{
         display: block;
+        width: 50%;
     }
     .act img{
         height: 180px;
+    }
+    .dispo{
+        width: 100%;
+    }
+    .boite-act1{
+        width: fit-content;
+    }
+    .colonne, .colonne1{
+        padding: 2em 1em;
+        margin: 0%;
+    }
+    .txt-act-long{
+        font-size: 15px !important;
+    }
+}
+@media screen and (max-width: 1220px){
+    .txt-act-long{
+    font-size: 12px;
+    }
+}
+@media screen and (min-width: 1600px){
+    .footer{
+        padding-left: 15%;
+    }
+    .colonne, .colonne1{
+        justify-content: space-between;
     }
 }

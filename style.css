@@ -57,6 +57,14 @@ h3{
         font-size: 25px;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (max-width: 1024px){
 
+}
+@media screen and (min-width: 1600px){
+    header, .ensemble, section{
+        margin: 0 15%;
+    }
+    .img-reservia{
+        left: 15%;
+    }
 }

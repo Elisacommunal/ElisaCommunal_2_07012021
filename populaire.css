@@ -29,20 +29,23 @@
     margin: 2em 0;
 }
 .txt-pop{
-    padding-left: 1.5em;
+    padding-left: 1%;
+    font-size: 18px;
 }
 .txt-pop p{
-    padding-bottom: 2.5em;
+    padding-bottom: 2em;
 }
 .txt-pop h3{
     padding-top: 0.5em;
+    font-size: 18px;
 }
 .txt-pop i{
     padding-bottom: 1em;
+    
 }
 @media only screen and (max-width: 480px){
     .txt-pop h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
     .txt-pop p{
         font-size: 14px;

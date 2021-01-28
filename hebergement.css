@@ -24,6 +24,13 @@
 }
 .txtboite{
     margin: 3%;
+    
+}
+.txtboite h3{
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .txtboite p{
     margin: 0;
@@ -50,6 +57,9 @@
         display: block !important;
     }
 }
+@media screen and (max-width: 633px){
+    
+}
 @media screen and (max-width: 768px){
     .bgboite{
         background-color: white;
@@ -68,10 +78,12 @@
        width: fit-content;
    }
    .boite{
-       width: 80%;
-       margin-left: 2em;
+       width: 95%;
+       margin: 2px;
+      
    }
    .H2-hebergement{
        padding-left: 0;
    }
+   .txtboite
 }
