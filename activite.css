@@ -45,7 +45,7 @@
     border-radius:25px;
     width: fit-content;
     height: fit-content;
-    box-shadow: 2px 3px 15px #92929269;
+    box-shadow: 2px 0px 15px #92929269;
     margin: 1em;
 }
 .txt-act{
@@ -68,6 +68,7 @@
 .footer{
     display: flex;
     background-color: #f2f2f2;
+    font-size: 15px;
     margin-top: 5%;
     padding: 3em 4em;
 }
@@ -81,14 +82,12 @@
     text-decoration: none;
     color: black;
 }
-@media only screen and (max-width: 480px){
-    
-    
+.colonne h3, .colonne1 h3{
+    font-size: 15px;
 }
 @media screen and (max-width: 768px){
     .footer{
         display: block;
-        font-size: small;
         padding: 1.5em;
     }
     .act img{
