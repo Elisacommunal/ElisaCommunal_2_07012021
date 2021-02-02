@@ -2,7 +2,7 @@
     /*justify-content: flex-end;*/
     background-color: #F2F2F2;
     border-radius:25px;
-    padding: 1em;
+    padding: 2.5em;
     margin: 0.5em;
 }
 .aside:nth-child(1){
@@ -10,7 +10,7 @@
 }
 .img-pop{
     width: 40%;
-    height: 10em;
+    height: 10.75em;
     padding: 0.5em;
     border-radius: 25px 0px 0px 25px;
     object-fit: cover;
@@ -29,14 +29,15 @@
     background-color: white;
     border-radius:25px;
     box-shadow: 2px 3px 15px #92929269;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 .txt-pop{
     padding-left: 1%;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 5px;
 }
 .txt-pop p{
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 .txt-pop h3{
     font-size: 18px;
@@ -46,12 +47,6 @@
     
 }
 @media only screen and (max-width: 768px){
-    .txt-pop h3 {
-        font-size: 18px !important;
-    }
-    .txt-pop p{
-        font-size: 16px !important;
-    }
     .aside{
         border-radius: 0;
         margin: 0;
@@ -59,11 +54,23 @@
     }
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 921px){
     .txt-pop h3{
-        font-size: 16px;
+        font-size: 18px !important;
     }
     .txt-pop p{
-        font-size: 14px;
+        font-size: 16px !important;
     }
+}
+@media screen and (max-width: 1024px){
+    .aside h2{
+        font-size: 22px;
+    }
+    .txt-pop h3{
+        font-size: 16px ;
+    }
+    .txt-pop p{
+        font-size: 13px;
+    }
+   
 }

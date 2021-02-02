@@ -60,23 +60,12 @@ h3{
         left: 6%;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 921px){
     .ensemble{
         display: block;
         margin: 0;
     }
     h1{
         font-size: 25px;
-    }
-}
-@media screen and (max-width: 1024px){
-
-}
-@media screen and (min-width: 1600px){
-    header, .ensemble, section{
-        margin: 0 15%;
-    }
-    .img-reservia{
-        left: 15%;
     }
 }

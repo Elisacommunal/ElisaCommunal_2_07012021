@@ -6,6 +6,7 @@
 }
 .tab-act{
     display: flex;
+    width: 50%;
 }
 #activité{
     margin-left: 1em;
@@ -46,7 +47,28 @@
     width: fit-content;
     height: fit-content;
     box-shadow: 2px 0px 15px #92929269;
-    margin: 1em;
+    margin: 1em 1em 1.5em 1em;
+}
+.boite-act3{
+    border-radius:25px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 2px 0px 15px #92929269;
+    margin: 1em 1em 0em 1em;
+}
+.boite-act4{
+    border-radius:25px;
+    width: fit-content;
+    height: 180px;
+    box-shadow: 2px 0px 15px #92929269;
+    margin: 1em 1em 1em 1em; 
+}
+.boite-act5{
+    border-radius:25px;
+    width: fit-content;
+    height: 180px;
+    box-shadow: 2px 0px 15px #92929269;
+    margin: 1em 1em 0em 1em;
 }
 .txt-act{
     font-weight: bold;
@@ -64,6 +86,8 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding: 0%;
+    margin: 0%;
 }
 .footer{
     display: flex;
@@ -72,8 +96,9 @@
     margin-top: 5%;
     padding: 3em 4em;
 }
-.colonne{
+.colonne, .colonne1{
     margin-right: 5%;
+    padding: 5%;
 }
 .colonne p {
     width: 15em;
@@ -83,14 +108,18 @@
     color: black;
 }
 .colonne h3, .colonne1 h3{
-    font-size: 15px;
+    font-size: 16px;
 }
 @media screen and (max-width: 768px){
     .footer{
         display: block;
         padding: 1.5em;
     }
+    .colonne, .colonne1{
+        padding-left: 10% !important;
+    }
     .act img{
+        width: 100%;
         height: 180px;
     }
     .act{
@@ -99,6 +128,9 @@
     .tab-act{
         width: 100% !important;
         margin: 0 !important;
+    }
+    .boite-act1{
+        width: 95% !important;
     }
 }
 @media screen and (max-width: 1024px){
@@ -113,7 +145,11 @@
         width: 100%;
     }
     .boite-act1{
-        width: fit-content;
+        width: 95%;
+    }
+    .boite-act2, .boite-act3, .boite-act4, .boite-act5{
+        margin: 1em;
+        height: auto;
     }
     .colonne, .colonne1{
         padding: 2em 1em;
@@ -126,13 +162,5 @@
 @media screen and (max-width: 1390px){
     .txt-act-long{
     font-size: 12px;
-    }
-}
-@media screen and (min-width: 1600px){
-    .footer{
-        padding-left: 15%;
-    }
-    .colonne, .colonne1{
-        justify-content: space-between;
     }
 }
