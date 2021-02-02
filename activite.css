@@ -129,9 +129,6 @@
         width: 100% !important;
         margin: 0 !important;
     }
-    .boite-act1{
-        width: 95% !important;
-    }
 }
 @media screen and (max-width: 1024px){
     .tab-act{
@@ -145,7 +142,7 @@
         width: 100%;
     }
     .boite-act1{
-        width: 95%;
+        width: fit-content;
     }
     .boite-act2, .boite-act3, .boite-act4, .boite-act5{
         margin: 1em;
