@@ -1,22 +1,7 @@
-
+/*HEADER*/
     .entete{
         align-items: center;
         flex-flow: row wrap;
-    }
-    
-    #inscription{
-        color: #0065FC;
-        font-weight: bolder;
-        padding: 1em;
-        margin: 0%;
-    }
-    .alignement a{
-        text-decoration: none;
-    }
-    .alignement{
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 10px;
     }
     /* navigation */
     ul{
@@ -34,6 +19,20 @@
         padding: 1em;
         padding-top: 1.5em;
     }
+    #inscription{
+        color: #0065FC;
+        font-weight: bolder;
+        padding: 1em;
+        margin: 0%;
+    }
+    .alignement{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+    .alignement a{
+        text-decoration: none;
+    }
     /* Formulaire de recherche */
     .form{
         display: flex;
@@ -46,6 +45,12 @@
     }
     .form i{
         font-size: 20px;
+    }
+    .map-marker{
+        background-color: #F2F2F2;
+        padding: auto;
+        padding: 1em ;
+        border-radius:  10px 0px 0px 10px;
     }
     input{
         border: hidden;
@@ -66,13 +71,44 @@
     }
     .rechercheM{
         display: none;
+    } 
+    /*Filtre*/
+    .filtres{
+        display: flex;
+        align-items: center; 
     }
-    .map-marker{
-        background-color: #F2F2F2;
-        padding: auto;
-        padding: 1em ;
-        border-radius:  10px 0px 0px 10px;
+    #titre-filtre{
+        margin-right: 1em;
     }
+    .filtre-ligne{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filtre{
+        display: flex;
+        align-items: center;
+        border: solid #F2F2F2 3px;
+        border-radius: 50px;
+        width:fit-content;
+        height: 35px;
+        margin: 12px;
+    }
+    .icone{
+        display: flex;
+        align-items: center;
+        background-color: #DEEBFF;
+        padding: 12px;
+        border-radius: 50px ;
+        width: 15px;
+        height: 15px;
+        margin-left: -3px;
+        font-size: small;
+        color: #0065FC;
+    }
+    .txtfiltre{
+        margin: 0px 25px ;
+        font-weight: bold;
+    } 
     /*info*/
     .info{
         display: flex;
@@ -92,61 +128,20 @@
     .txt-info{
         padding: 5px;
     }
-    /*Filtre*/
-    .filtre{
-        display: flex;
-        align-items: center;
-        border: solid #F2F2F2 3px;
-        border-radius: 50px;
-        width:fit-content;
-        height: 35px;
-        margin: 12px;
-    }
-    #titre-filtre{
-        margin-right: 1em;
-    }
-    .icone{
-        display: flex;
-        align-items: center;
-        background-color: #DEEBFF;
-        padding: 12px;
-        border-radius: 50px ;
-        width: 15px;
-        height: 15px;
-        margin-left: -3px;
-        font-size: small;
-        color: #0065FC;
-    }
-    .txtfiltre{
-        margin: 0px 25px ;
-        font-weight: bold;
-    }
-    .filtres{
-        display: flex;
-        align-items: center;
-        
-    }
-    .filtre-ligne{
-        display: flex;
-        flex-wrap: wrap;
-    }
+    /*MEADIAQUERIES MOBILE*/
 @media screen and (max-width: 480px) {
     .entete{
         position: relative;
         display: block;
-        margin: 0 -15px ;
-        
+        margin: 0 -15px ;   
     }
-    .form{
-        width: 100% !important;
-        min-width: 0% !important;
+    nav{
+        justify-content: center;
+        padding: 0em;
+        width: 100%;
     }
-    .rechercheM{
-        display: block;
-        color: white;
-    }
-    .rechercheL{
-        display: none;
+    .alignement{
+        padding: 0%;
     }
     #inscription{
         position: absolute;
@@ -161,11 +156,6 @@
         width: 100%;
         border-bottom: solid #DEEBFF 3px;
     }
-    nav{
-        justify-content: center;
-        padding: 0em;
-        width: 100%;
-    }
     li{
         width: 50%;
         text-align: center;
@@ -179,42 +169,29 @@
         font-size: 17px;
         padding: 1em 0 2em 0;
     }
-    .alignement{
-        padding: 0%;
-    }
     .navig{
         border-top: none;
     }
     .navig:hover{
         border-top: none;
     }
-
-    /*
-    ul{
-        display: flex;
-        list-style-type: none;
+    .form{
+        width: 100% !important;
+        min-width: 0% !important;
     }
-    .navig{
-        text-decoration: none;
-        color: black;
-        padding: 1em;
+    .rechercheM{
+        display: block;
+        color: white;
     }
-    .navig:hover{
-        border-top: solid #0065FC 3px;
-        color: #0065FC;
-        padding: 1em;
-        padding-top: 1.5em;
+    .rechercheL{
+        display: none;
     }
-    */
     button{
         border-radius: 10px ;
-    }
-    
+    }   
 }
+/*MEADIAQUERIES TABLETTE*/
 @media screen and (max-width: 768px){
-    .filtres{
-        flex-wrap: wrap;
-    }
     .form{
         width: 75%;
         min-width: 450px;
@@ -222,7 +199,11 @@
     input{
         font-size: 15px !important;
     }
+    .filtres{
+        flex-wrap: wrap;
+    }
 }
+/*MEADIAQUERIES LAPTOP*/
 @media screen and (max-width: 1024px){
     .filtres{
         display: block;

@@ -1,3 +1,15 @@
+.bgboite{
+    background-color: #F2F2F2;
+    border-radius:25px;
+    padding: 2.5em;
+    margin: 0.5em;
+}
+.bgboite:nth-child(2){
+    flex: 4;
+}
+.h2-hebergement{
+    padding-left: 0.5em;
+}
 .ligne{
     display: flex;
     justify-content: space-around;
@@ -16,12 +28,6 @@
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;
 }
-.H2-hebergement{
-    padding-left: 0.5em;
-}
-.strong{
-    font-weight: bold;
-}
 .txtboite{
     margin: 3%;
 }
@@ -35,38 +41,31 @@
     margin: 0;
     padding: 0.5em 0;
 }
-.bgboite{
-    background-color: #F2F2F2;
-    border-radius:25px;
-    padding: 2.5em;
-    margin: 0.5em;
-}
-.bgboite:nth-child(2){
-    flex: 4;
-}
 .lien-afficher{
     font-size: 18px;
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
 }
+/*MEADIAQUERIES MOBILE*/
 @media screen and (max-width: 480px){
-    .ligne{
+    .bgboite{
+        padding: 5% !important;
+    }
+    .boite-heberg{
         display: block !important;
-        margin: 0px !important;
-        width: 98vw !important;
     }
     .boite{
         width: fit-content !important;
         margin-left: 1em;
     }
-    .boite-heberg{
+    .ligne{
         display: block !important;
-    }
-    .bgboite{
-        padding: 5% !important;
+        margin: 0px !important;
+        width: 90vw !important;
     }
 }
+/*MEADIAQUERIES TABLETTE*/
 @media screen and (max-width: 768px){
     .bgboite{
         background-color: white;
@@ -74,15 +73,16 @@
         padding: 0% 3% 0% 2%;
     }
 }
+/*MEADIAQUERIES LAPTOP*/
 @media screen and (max-width: 1024px){
     .bgboite{
         display: block;
     }
+    .h2-hebergement{
+        font-size: 22px;
+    }
     .boite-heberg{
         display: flex;
-    }
-    .H2-hebergement{
-        font-size: 22px;
     }
    .ligne{
        display: flex;

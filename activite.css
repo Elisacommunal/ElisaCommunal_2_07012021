@@ -1,3 +1,6 @@
+#activité{
+    margin-left: 1em;
+}
 .act{
     display: flex;
     flex: auto;
@@ -7,33 +10,6 @@
 .tab-act{
     display: flex;
     width: 50%;
-}
-#activité{
-    margin-left: 1em;
-}
-.img-act{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
-.img-act2{
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
-.img-act3{
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
-.img-act4{
-    width: 100%;
-    height: 127px;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
 }
 .boite-act1 {
     border-radius:25px;
@@ -70,6 +46,30 @@
     box-shadow: 2px 0px 15px #92929269;
     margin: 1em 1em 0em 1em;
 }
+.img-act{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+.img-act2{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+.img-act3{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+.img-act4{
+    width: 100%;
+    height: 127px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
 .txt-act{
     font-weight: bold;
     font-size: 17px;
@@ -89,6 +89,7 @@
     padding: 0%;
     margin: 0%;
 }
+/*FOOTER*/
 .footer{
     display: flex;
     background-color: #f2f2f2;
@@ -110,7 +111,19 @@
 .colonne h3, .colonne1 h3{
     font-size: 16px;
 }
+/*MEADIAQUERIES MOBILE-TABLETTE*/
 @media screen and (max-width: 768px){
+    .act{
+        display: block;
+    }
+    .act img{
+        width: 100%;
+        height: 180px;
+    }
+    .tab-act{
+        width: 100% !important;
+        margin: 0 !important;
+    }
     .footer{
         display: block;
         padding: 1.5em;
@@ -118,42 +131,33 @@
     .colonne, .colonne1{
         padding-left: 10% !important;
     }
+}
+/*MEADIAQUERIES LAPTOP*/
+@media screen and (max-width: 1024px){
     .act img{
-        width: 100%;
         height: 180px;
     }
-    .act{
-        display: block;
-    }
-    .tab-act{
-        width: 100% !important;
-        margin: 0 !important;
-    }
-}
-@media screen and (max-width: 1024px){
     .tab-act{
         display: block;
         width: 50%;
-    }
-    .act img{
-        height: 180px;
-    }
-    .dispo{
-        width: 100%;
     }
     .boite-act1{
         width: 95%;
     }
     .boite-act2, .boite-act3, .boite-act4, .boite-act5{
+        width: 100%;
         margin: 1em;
         height: auto;
+    }
+    .txt-act-long{
+        font-size: 17px !important;
+    }
+    .dispo{
+        width: 95%;
     }
     .colonne, .colonne1{
         padding: 2em 1em;
         margin: 0%;
-    }
-    .txt-act-long{
-        font-size: 17px !important;
     }
 }
 @media screen and (max-width: 1390px){
