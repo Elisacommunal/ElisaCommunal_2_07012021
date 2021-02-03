@@ -135,7 +135,7 @@
         position: relative;
         display: block;
         margin: 0 -15px ;
-        border-bottom: solid #DEEBFF 3px;
+        
     }
     .form{
         width: 100% !important;
@@ -155,29 +155,57 @@
         padding-right: 0px;
     }
     ul{
-        padding: 0.7em 0 0.7em ;
+        padding: 0.7em 0em 0em 0em ;
         font-size: 20px;
-        margin: 3em -1em 1em 0em;
+        margin: 3em 0em 1em 0em;
+        width: 100%;
+        border-bottom: solid #DEEBFF 3px;
     }
     nav{
         justify-content: center;
         padding: 0em;
-        width: 90%;
+        width: 100%;
+    }
+    li{
+        width: 50%;
+        text-align: center;
+        margin: 0%;
+        font-size: 17px;
+        padding: 1em 0 2.5em 0; 
+    }
+    li:hover{
+        border-bottom: solid #0065FC 3px;
+        color: #0065FC;
+        font-size: 17px;
+        padding: 1em 0 2em 0;
+    }
+    .alignement{
+        padding: 0%;
     }
     .navig{
         border-top: none;
-        font-size: 17px;
-        position: relative;
-        padding: 1em 3em;
     }
     .navig:hover{
-        border-bottom: solid #0065FC 3px;
         border-top: none;
-        color: #0065FC;
-        font-size: 17px;
-        position: relative;
-        padding: 1em 3em 2.6em;
     }
+
+    /*
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+    .navig{
+        text-decoration: none;
+        color: black;
+        padding: 1em;
+    }
+    .navig:hover{
+        border-top: solid #0065FC 3px;
+        color: #0065FC;
+        padding: 1em;
+        padding-top: 1.5em;
+    }
+    */
     button{
         border-radius: 10px ;
     }

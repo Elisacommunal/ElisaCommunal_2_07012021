@@ -56,7 +56,7 @@
         margin: 0px !important;
     }
     .boite{
-
+        width: fit-content !important;
         margin-left: 1em;
     }
     .boite-heberg{
@@ -89,7 +89,7 @@
        width: 100%;
    }
    .boite{
-       width: fit-content;
+       width: 85%;
        margin: 1em;
    }
    .lien-afficher{
