@@ -54,6 +54,7 @@
     .ligne{
         display: block !important;
         margin: 0px !important;
+        width: 98vw !important;
     }
     .boite{
         width: fit-content !important;
