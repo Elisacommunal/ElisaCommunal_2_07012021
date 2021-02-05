@@ -2,7 +2,7 @@
     background-color: #F2F2F2;
     border-radius:25px;
     padding: 2.3em;
-    margin: 0.5em;
+    margin: 1em;
 }
 .aside:nth-child(1){
     flex: 2;

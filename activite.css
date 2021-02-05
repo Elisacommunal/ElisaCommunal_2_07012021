@@ -1,5 +1,6 @@
 #activité{
     margin-left: 1em;
+    margin-top: 2.5em;
 }
 .act{
     display: flex;
@@ -131,6 +132,7 @@
         padding-left: 10% !important;
     }
 }
+
 /*MEADIAQUERIES LAPTOP*/
 @media screen and (max-width: 1024px){
     .act img{
